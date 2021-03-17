@@ -3,7 +3,7 @@ const { VueLoaderPlugin } = require('vue-loader');
 const { HotModuleReplacementPlugin } = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
+// const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 
 module.exports = {
     entry: join(__dirname, 'app.js'), 
@@ -63,7 +63,7 @@ module.exports = {
             template: join(__dirname, 'index.html')
         }),
         new BundleAnalyzerPlugin(),
-        new VuetifyLoaderPlugin(),
+        // new VuetifyLoaderPlugin(),
     ],
     resolve: {
         alias: {
