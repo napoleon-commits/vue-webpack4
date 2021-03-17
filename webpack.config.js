@@ -47,4 +47,9 @@ module.exports = {
         },
         extensions: ['*', '.js', '.vue', '.json']
     },
+    optimization: {
+        splitChunks: {
+            chunks: 'all',
+        },
+    },
 };
