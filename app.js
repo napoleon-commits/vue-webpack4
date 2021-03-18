@@ -1,11 +1,6 @@
 import Vue from 'vue';
-import vuetify from './plugins/vuetify' // path to vuetify export
-
-Vue.component('hello-component', require('./components/HelloComponent').default);
+import App from './App.vue';
 
 new Vue({
-    vuetify,
-    data: {
-        message: 'Hello from Webpack'
-    }
-  }).$mount('#app');
+    render: h => h(App),
+}).$mount('#app')
